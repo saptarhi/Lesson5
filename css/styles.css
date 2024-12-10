@@ -1,0 +1,186 @@
+@import url("./_normalize.css");
+
+:root {
+  --main-font-size: 18px;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: var(--main-font-size);
+}
+
+/* Header */
+
+.container {
+  width: 970px;
+  margin: 0 auto;
+}
+.header {
+  padding: 25px 0;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.menu__link {
+  text-decoration: none;
+  color: #828282;
+}
+.menu__link:hover {
+  color: #070707;
+}
+.nav {
+  position: relative;
+}
+.nav::after {
+  content: "";
+  position: absolute;
+  bottom: -25%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #828282;
+}
+
+/* Section Banner */
+
+.title_1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+.wrapper-img {
+  width: 100%;
+  height: 388px;
+}
+.img {
+  width: 100%;
+}
+
+/* Section About Me */
+
+.about-me {
+  padding: 100px 0;
+  text-align: center;
+  background: #f6f6f6;
+}
+.title_2 {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.text {
+  max-width: 470px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  line-height: 25px;
+}
+
+/* Section Skills */
+
+.skills {
+  padding: 100px 0;
+  text-align: center;
+}
+.title_3 {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.text_skills {
+  max-width: 250px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  line-height: 24px;
+}
+.row {
+  display: flex;
+  gap: 97px;
+  justify-content: center;
+  align-items: center;
+}
+.row img {
+  max-width: 970px;
+  height: 230px;
+}
+
+/* Section Portfolio */
+
+.portfolio {
+  padding: 59px 0 59px 0;
+  text-align: center;
+  background: #f6f6f6;
+}
+.title_4 {
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.img_portfolio {
+  margin-bottom: 70px;
+}
+.text_portfolio {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: black;
+}
+.centered_word {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  height: 400px;
+}
+.title_5 {
+  font-size: 34px;
+  font-weight: bold;
+}
+.centered_text {
+  display: block;
+  margin: 0 auto;
+}
+.button_massage {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.hover_button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 10px 20px;
+  border-radius: 22px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.hover_button:hover {
+  background-color: white;
+  transform: scale(1.1);
+  color: #070707;
+}
+.icon_container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+.icon {
+  transition: transform 0.3s ease, opaciti 0.3s ease;
+}
+.icon:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+}
+.text_contacts {
+  color: #828282;
+}
